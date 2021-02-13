@@ -15,12 +15,26 @@ class Car {
     
   drive(km) {
     this.mileage += km;
-  } 
+  }
 
   getVal() {
     console.log(this);
   }
 }
+
+
+const car = new Car();
+
+car.drive(150);
+
+const car2 = new Car();
+car2.drive(10000)
+
+
+
+
+
+
 
 
 // Carクラスを継承したTruckクラス
@@ -33,6 +47,9 @@ class Truck extends Car {
   // ここに独自のメソッドを記述する
 
 }
+
+const truck = new Truck();
+truck.drive(300);
 
 
 
